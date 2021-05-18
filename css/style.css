@@ -5555,24 +5555,57 @@ a:active {
     margin: 0 auto;
 }
 /* choose block */
-
-
+.__container-bg__img{
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.container-bg__img-01{
+    position: absolute;
+    left: 0;
+    top: 33%;
+    z-index: -1;
+}
+.container-bg__img-02{
+    position: absolute;
+    right: 0;
+    top: 4%;
+    z-index: -1;
+}
+.choose{
+    /* background: url(../img/careers/Vector01.png) 25% center no-repeat; */
+}
+/* .choose__bg-img{
+    position: absolute;
+    top: 0;
+    left: -200px;
+    z-index: -1;
+} */
 .choose__block{
     padding-bottom: 64px;
     position: relative;
+    box-shadow: border-box;
 }
-.choose__orange{
+/* .choose-01{
     position: absolute;
-    top: 30%;
+    top: 28%;
+    left: -600px;
     z-index: -1;
-    left: -550px;
+    box-shadow: border-box;
 }
-.choose__blue{
+.choose-02{
     position: absolute;
-    top: 8%;
+    right: -200px;
+    top: 0;
     z-index: -1;
-    right: -560px;
-}
+    box-shadow: border-box;
+} */
+/* .choose__orange,.choose__blue{
+    position: absolute;
+    z-index: -1;
+} */
+
 .choose__block:after{
     content: '';
     position: absolute;
@@ -5817,21 +5850,14 @@ a:active {
     .choose__block{
         padding-bottom: 48px;
     }
-.choose__orange{
-        position: absolute;
-        top: 45%;
-        z-index: -1;
-        left: -350px;
-        height: 528px;
-        
+    .container-bg__img-01{
+        height: 558px;
+        top: 44%;
     }
-    /* .choose__blue{
-        position: absolute;
-        top: 5%;
-        z-index: -1;
-        right: -240px;
-        height: 666px;
-    }  */
+    .container-bg__img-02{
+        height: 700px;
+        top: 7%;
+    }
     .choose__title{
         font-size: 36px;
         line-height: 40px;
@@ -6028,14 +6054,14 @@ a:active {
     .choose__block{
         padding-bottom: 48px;
     }
-    .choose__orange{
-        left: -150px;
-        height: 342px;
+    .container-bg__img-01{
+        height: 450px;
+        top: 44%;
     }
-    /* .choose__blue{
-        right: -50px;
-        height: 431px;
-    } */
+    .container-bg__img-02{
+        height: 500px;
+        top: 4%;
+    }
     .choose__title{
         font-size: 24px;
         line-height: 32px;
@@ -6085,6 +6111,10 @@ a:active {
     }
     .row-choose__img img{
         height: 200px;
+    }
+    .container-bg__img-01{
+        height: 342px;
+        top: 47%;
     }
 }
 
